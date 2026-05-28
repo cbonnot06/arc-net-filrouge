@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TechProShop.TechProQuote.Application/TechProShop.TechProQuote.Application.csproj" />
+    <Project Path="src/TechProShop.TechProQuote.Domain/TechProShop.TechProQuote.Domain.csproj" />
+    <Project Path="src/TechProShop.TechProQuote.Infrastructure/TechProShop.TechProQuote.Infrastructure.csproj" />
+    <Project Path="src/TechProShop.TechProQuote.Web/TechProShop.TechProQuote.Web.csproj" />
+  </Folder>
+</Solution>
