@@ -1,0 +1,10 @@
+namespace TechProShop.TechProQuote.MAUIApp.Pages.Controls
+{
+    public partial class TagView
+    {
+        public TagView()
+        {
+            InitializeComponent();
+        }
+    }
+}

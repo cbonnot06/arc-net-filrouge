@@ -1,18 +1,27 @@
+using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
+using TechProShop.TechProQuote.Application.Interfaces;
 using TechProShop.TechProQuote.Domain.Entities;
+using TechProShop.TechProQuote.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+
+var connectionString = builder.Configuration.GetConnectionString
+    ("DefaultConnection")
+    ?? @"Server=(localdb)\mssqllocaldb;Database=TechProQuote;Trusted_Connection=true;TrustServerCertificate=true";
+
+builder.Services.AddDbContext<TechProQuoteDbContext>
+    (opt => opt.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IClientRepository, ClientRepository>();
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddOpen
-
-
-
-
 
 var app = builder.Build();
 

@@ -5,5 +5,9 @@
     <Project Path="src/TechProShop.TechProQuote.Infrastructure/TechProShop.TechProQuote.Infrastructure.csproj" />
     <Project Path="src/TechProShop.TechProQuote.Web/TechProShop.TechProQuote.Web.csproj" />
     <Project Path="TechProShop.TechProQuote.BackWeb/TechProShop.TechProQuote.BackWeb.csproj" Id="7f7c7b4d-97ad-428f-8540-ba9d9db0292c" />
+    <Project Path="TechProShop.TechProQuote.BlazorWASM/TechProShop.TechProQuote.BlazorWASM.csproj" Id="25692ebc-fdf6-42c7-a347-53892a02b8d2" />
+    <Project Path="TechProShop.TechProQuote.MAUIApp/TechProShop.TechProQuote.MAUIApp.csproj" Id="4aa538b8-41df-4a55-a0db-473096749e11">
+      <Deploy Solution="Debug|*" />
+    </Project>
   </Folder>
 </Solution>
