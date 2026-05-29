@@ -1,0 +1,21 @@
+﻿@model IEnumerable<TechProShop.TechProQuote.Domain.Entities.Client>
+
+@{
+    ViewData["Title"] = "Clients";
+}
+<h1>Liste des clients</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr><td>@c.Nom</td><td>@c.Email</td></tr>
+        }
+    </tbody>
+</table>
