@@ -4,5 +4,6 @@
     <Project Path="src/TechProShop.TechProQuote.Domain/TechProShop.TechProQuote.Domain.csproj" />
     <Project Path="src/TechProShop.TechProQuote.Infrastructure/TechProShop.TechProQuote.Infrastructure.csproj" />
     <Project Path="src/TechProShop.TechProQuote.Web/TechProShop.TechProQuote.Web.csproj" />
+    <Project Path="TechProShop.TechProQuote.BackWeb/TechProShop.TechProQuote.BackWeb.csproj" Id="7f7c7b4d-97ad-428f-8540-ba9d9db0292c" />
   </Folder>
 </Solution>
